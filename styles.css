@@ -1,0 +1,132 @@
+:root{
+    font-family: "Roboto", sans-serif;
+}
+/*Scrollbar using webkit - Inspiration from Fireship (Youtube)*/
+body::-webkit-scrollbar {
+    width: 7px;
+}
+
+body::-webkit-scrollbar-track {
+    background: white;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #231651;
+}
+
+/*Scrollbar for Firefox - currently not working on Firefox or IE*/
+
+body {
+    overflow-y: scroll;
+    scrollbar-color: #231651 #FFFFFF;
+}
+
+/*
+Colour palette:
+Light Cyan: #D6FFF6
+Russian Violet: #231651
+Medium Turquoise: #4DCCBD
+Spanish Blue: #2374AB
+Light Coral: #FF8484
+*/
+
+/*Testing Area Below*/
+
+
+/*Basic Things defined here:*/
+
+body{
+    color: black;
+    margin: 0;
+    padding:0;
+}
+
+main{
+    margin-left: 5rem;
+    padding: 16px;
+}
+
+/*Certain things for smaller devices listed here:*/
+
+
+
+    .navy{
+        width: 5rem;
+        height: 100vh;
+    }
+
+    .navy:hover {
+        width: 20rem;
+    }
+
+    .navy:hover .link-text {
+        display: block;
+    }
+
+/*Navbar defined here:*/
+
+.navy {
+    position: fixed;
+    background-color: #231651;
+    transition: width 200ms ease;
+}
+
+.navbar {
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.big {
+    font-size: 24px;
+}
+
+.navbar -item{
+    width: 100%;
+}
+
+.navbar-item{
+    padding-right: 3rem;
+    padding-left: 3rem;
+    border-radius: 7px;
+}
+.navbar-item:last-child {
+    margin-top: auto;
+}
+
+.navbar-item:hover{
+    background-color: #3B3871;
+    transition: 300ms
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: #4DCCBD;
+    text-decoration: none;
+}
+
+.link-text{
+    display: none;
+    margin-left: 1rem;
+}
+
+.nav-link i {
+    min-width: 2rem;
+}
+
+.logo {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #FF8484;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3ch;
+    width: 100%;
+}
