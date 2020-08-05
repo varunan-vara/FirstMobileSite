@@ -6,7 +6,9 @@
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
         <script src="https://kit.fontawesome.com/32b9b82182.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" type="text/css" href="styles.css">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Varela+Round&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Varela+Round&display=swap" rel="stylesheet">
+        <script type="text/javascript" src="https://cdn.rawgit.com/asvd/dragscroll/master/dragscroll.js"></script>
+        <title>Home</title>
     </head>
     <body>
         <nav class="navy">
@@ -50,18 +52,39 @@
             </ul>
         </nav>
         <main>
-            <div id="titlecard" class="container">
-                <h1>This is a title</h1>
-                <!--This will have a background image and a fancy font or something-->
-                <h5>A fancy subtitle of some sort</h5>
-                <div id="mainbutton" class="button"></div>
+            <div id="titlecard">
+                <!--Photo by Pixabay from Pexels-->
+                <img id="galacy" src="Assets/Pictures/pexels-pixabay-533923.jpg">
+                <h1 id="title">Company Name</h1>
+                <center><div id="mainbutton" class="button"><center><p id="mainbuttoncontent"></p></center></div></center>
             </div>
-            <div id="RecentContent" class="container">
-                <p class="loremipsum"></p>
+                <h3 class="subtitle" id="blogtitle">Our Blog</h3>
+            <div id="recentcontent" class="container ">
+                <div id="blog">
+                    <ul>
+                        <li>
+                            <div class="card dragscroll" id="card1"></div>
+                        </li>
+                        <li>
+                            <div class="card dragscroll" id="card2"></div>
+                        </li>
+                        <li>
+                            <div class="card dragscroll" id="card3"></div>
+                        </li>
+                        <li>
+                            <div class="card dragscroll" id="card4"></div>
+                        </li>
+                        <li>
+                            <div class="card dragscroll" id="card5"></div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div id="Paragraph1" class="container"></div>
-            <div id="AdBox" class="container"></div>
-            <div id="Footer" class="container"></div>
+            <script src="JS/scroll.js"></script>
+            <div id="paragraph1" class="container"><center><p id="paragraph1text"></p></center></div>
+            <div id="adbox" class="container"></div>
+            <div id="footer" class="container">
+            </div>
         </main>
     </body>
 </html>
