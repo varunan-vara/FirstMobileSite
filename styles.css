@@ -148,15 +148,15 @@ Light Coral: #FF8484
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /*Scrollbar using webkit */
 body::-webkit-scrollbar {
-    width: 7px;
+    width: 0.5rem;
 }
 
 body::-webkit-scrollbar-track {
-    background: white;
+    background: #231651;
 }
 
 body::-webkit-scrollbar-thumb {
-    background: #231651;
+    background: #4DCCBD;
 }
 
 /*Scrollbar for Firefox - currently not working on Firefox or IE*/
@@ -190,6 +190,9 @@ main{
     background-color: #0A1123;
     transition: width 200ms ease;
     z-index: 100;
+    align-items: center;
+    align-self: center;
+    align-content: center;
 }
 
 .navbar {
@@ -310,6 +313,7 @@ img {
     z-index: -10;
     position: fixed;
     width: 100vw;
+    margin-bottom: 20px;
 }
 
 #title {
@@ -319,7 +323,7 @@ img {
     position: absolute;
     text-align:right;
     top: 35px;
-    left:580px;
+    right:30px;
     z-index: 89;
     width: 600px;
     color: white;
@@ -371,6 +375,14 @@ tweets/fb posts/ig posts for content*/
     height: 30px;
 }
 
+.card-content{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display:  -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+}
+
 .twitter {
     height:30px;
     width:30px;
@@ -404,7 +416,8 @@ tweets/fb posts/ig posts for content*/
 
 .totop:hover {
     background-color: #231631;
-    transition: 300ms
+    transition: 300ms;
+    cursor: pointer
 }
 
 #additionalcontent {
@@ -421,12 +434,32 @@ tweets/fb posts/ig posts for content*/
     background-color: #0A1123;
     color: white;
     margin: -80px;
+    align-content: center;
+    align-items: center;
 }
 
 .mainheader h2 {
     position: relative;
     top: 80px;
-    left: 900px;
+    left:60%;
+    align-content: center;
+    align-self: center;
     font-size: 70px;
     font-family: "Varela Round", serif;
+}
+
+.profile {
+    width: 400px;
+}
+
+.profile-provider {
+    width: 300px;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    margin-right: 30px;
+}
+
+.horizontallist {
+    display: flex;
 }
