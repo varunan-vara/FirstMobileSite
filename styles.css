@@ -352,6 +352,11 @@ tweets/fb posts/ig posts for content*/
     transition: 0.2s;
 }
 
+.card:hover {
+    box-shadow: -0.5rem 0.5rem 4 rem #111111;
+    transition: 0.2s;
+}
+
 .socialcontent {
     height: 250px;
     width: 400px;
@@ -392,6 +397,7 @@ tweets/fb posts/ig posts for content*/
 .whatsnew {
     font-size: 50px;
     padding-right: 30px;
+    margin-top: 100px;
     margin-bottom: -30px;
     text-align: right;
     align-self: end;
@@ -430,7 +436,8 @@ tweets/fb posts/ig posts for content*/
 }
 
 .mainheader{
-    height: 200px;
+    height: 250px;
+    width: 100vw;
     background-color: #0A1123;
     color: white;
     margin: -80px;
@@ -439,9 +446,9 @@ tweets/fb posts/ig posts for content*/
 }
 
 .mainheader h2 {
-    position: relative;
-    top: 80px;
-    left:60%;
+    position: absolute;
+    top: 0px;
+    right:20px;
     align-content: center;
     align-self: center;
     font-size: 70px;
